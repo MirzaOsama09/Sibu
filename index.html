@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Bot Startup - Revolutionizing the future with intelligent automation">
+    <title>sibU</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                sib
+                <img src="./assets/images/logo.png" 
+                     alt="sibU" 
+                     style="height:45px; width:auto;"
+                     class="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-2 fw-bold mb-4 hero-title">
+                        The Future of <span class="text-gradient">AI Automation</span>
+                    </h1>
+                    <p class="lead mb-4 hero-subtitle">
+                        Transform your business with intelligent bots that learn, adapt, and deliver exceptional results 24/7.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-lg me-3 pulse-animation">
+                            Get Started
+                        </a>
+                        <a href="#about" class="btn btn-outline-light btn-lg">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image-wrapper">
+                        <div class="floating-robot">
+                            <!-- <i class="bi bi-robot"></i> -->
+                            <img src="./assets/images/logo.png" alt="AI Technology" class="img-fluid rounded-4">
+
+                        </div>
+                        <div class="hero-particles">
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                            <span class="particle"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-down">
+                <i class="bi bi-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-up">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=800&fit=crop" alt="AI Technology" class="img-fluid rounded-4 shadow-lg">
+                        <div class="image-badge">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>AI Powered</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title mb-4">Revolutionizing Business with AI</h2>
+                    <p class="text-muted mb-4">
+                        We are at the forefront of artificial intelligence innovation, creating intelligent bots that seamlessly integrate into your workflow. Our cutting-edge technology combines machine learning, natural language processing, and automation to deliver solutions that drive real business value.
+                    </p>
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                <div class="feature-icon">
+                                    <i class="bi bi-lightning-charge-fill"></i>
+                                </div>
+                                <h5>Fast & Efficient</h5>
+                                <p class="text-muted small">Lightning-fast response times</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                <div class="feature-icon">
+                                    <i class="bi bi-shield-check-fill"></i>
+                                </div>
+                                <h5>Secure & Reliable</h5>
+                                <p class="text-muted small">Enterprise-grade security</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                <div class="feature-icon">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                </div>
+                                <h5>Scalable Solutions</h5>
+                                <p class="text-muted small">Grows with your business</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                <div class="feature-icon">
+                                    <i class="bi bi-headset"></i>
+                                </div>
+                                <h5>24/7 Support</h5>
+                                <p class="text-muted small">Always here to help</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">Powerful Capabilities</h2>
+                <p class="text-muted">Discover what makes our AI bots exceptional</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-brain"></i>
+                        </div>
+                        <h4>Machine Learning</h4>
+                        <p class="text-muted">Advanced ML algorithms that learn and improve from every interaction, becoming smarter over time.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </div>
+                        <h4>Natural Language</h4>
+                        <p class="text-muted">Understands context and intent with human-like conversation capabilities.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-gear-fill"></i>
+                        </div>
+                        <h4>Automation</h4>
+                        <p class="text-muted">Streamline workflows and automate repetitive tasks with intelligent automation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-bar-chart-fill"></i>
+                        </div>
+                        <h4>Analytics</h4>
+                        <p class="text-muted">Comprehensive insights and analytics to track performance and optimize results.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-puzzle-fill"></i>
+                        </div>
+                        <h4>Integration</h4>
+                        <p class="text-muted">Seamlessly integrates with your existing tools and platforms.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-card">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-globe"></i>
+                        </div>
+                        <h4>Multi-Language</h4>
+                        <p class="text-muted">Supports multiple languages for global business operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">Services</span>
+                <h2 class="section-title">What We Offer</h2>
+                <p class="text-muted">Comprehensive AI solutions for your business needs</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <i class="bi bi-customer-service"></i>
+                            <h4>Customer Support Bot</h4>
+                        </div>
+                        <div class="service-card-body">
+                            <p>24/7 intelligent customer support that handles inquiries, resolves issues, and escalates when needed.</p>
+                            <ul class="service-list">
+                                <li><i class="bi bi-check-circle"></i> Instant responses</li>
+                                <li><i class="bi bi-check-circle"></i> Multi-channel support</li>
+                                <li><i class="bi bi-check-circle"></i> Sentiment analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-card featured">
+                        <div class="service-badge">Popular</div>
+                        <div class="service-card-header">
+                            <i class="bi bi-briefcase-fill"></i>
+                            <h4>Business Automation</h4>
+                        </div>
+                        <div class="service-card-body">
+                            <p>Automate complex business processes, data entry, and workflow management with intelligent bots.</p>
+                            <ul class="service-list">
+                                <li><i class="bi bi-check-circle"></i> Process automation</li>
+                                <li><i class="bi bi-check-circle"></i> Data processing</li>
+                                <li><i class="bi bi-check-circle"></i> Workflow optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <i class="bi bi-graph-up"></i>
+                            <h4>Sales & Marketing</h4>
+                        </div>
+                        <div class="service-card-body">
+                            <p>AI-powered sales assistants that qualify leads, schedule meetings, and nurture prospects automatically.</p>
+                            <ul class="service-list">
+                                <li><i class="bi bi-check-circle"></i> Lead qualification</li>
+                                <li><i class="bi bi-check-circle"></i> Email automation</li>
+                                <li><i class="bi bi-check-circle"></i> CRM integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">Our Team</span>
+                <h2 class="section-title">Meet the Experts</h2>
+                <p class="text-muted">The brilliant minds behind our AI innovation</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="100">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="Team Member" class="img-fluid">
+                            <div class="team-overlay">
+                                <div class="team-social">
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                    <a href="#"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h5>Sarah Johnson</h5>
+                            <p class="text-muted">CEO & Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="200">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Team Member" class="img-fluid">
+                            <div class="team-overlay">
+                                <div class="team-social">
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                    <a href="#"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h5>Michael Chen</h5>
+                            <p class="text-muted">CTO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="300">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" alt="Team Member" class="img-fluid">
+                            <div class="team-overlay">
+                                <div class="team-social">
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                    <a href="#"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h5>Emily Rodriguez</h5>
+                            <p class="text-muted">Lead AI Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="400">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop" alt="Team Member" class="img-fluid">
+                            <div class="team-overlay">
+                                <div class="team-social">
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                    <a href="#"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h5>David Park</h5>
+                            <p class="text-muted">Head of Product</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="text-muted">Trusted by businesses worldwide</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"The AI bot has transformed our customer service. Response times are instant and customer satisfaction has increased by 40%."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop" alt="Client" class="testimonial-avatar">
+                            <div>
+                                <h6>Jennifer Martinez</h6>
+                                <p class="text-muted small">CEO, TechCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Incredible automation capabilities. We've saved over 20 hours per week on repetitive tasks. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop" alt="Client" class="testimonial-avatar">
+                            <div>
+                                <h6>Robert Thompson</h6>
+                                <p class="text-muted small">Operations Director, InnovateLabs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"The best investment we've made this year. The AI bot handles complex queries with ease and our team can focus on strategic work."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop" alt="Client" class="testimonial-avatar">
+                            <div>
+                                <h6>Amanda Lee</h6>
+                                <p class="text-muted small">VP Marketing, GrowthCo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">Contact Us</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="text-muted">Ready to transform your business? Let's talk!</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="contact-info-item">
+                                    <div class="contact-icon">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </div>
+                                    <h6>Address</h6>
+                                    <p class="text-muted small">123 Innovation Street<br>Tech City, TC 12345</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-info-item">
+                                    <div class="contact-icon">
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </div>
+                                    <h6>Phone</h6>
+                                    <p class="text-muted small">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-info-item">
+                                    <div class="contact-icon">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </div>
+                                    <h6>Email</h6>
+                                    <p class="text-muted small">hello@aibotstartup.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="contact-form mt-5">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        Send Message <i class="bi bi-arrow-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-robot me-2"></i>AI Bot
+                    </h5>
+                    <p class="text-muted">Transforming businesses with intelligent automation and cutting-edge AI technology.</p>
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h6 class="fw-bold mb-3">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h6 class="fw-bold mb-3">Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h6 class="fw-bold mb-3">Legal</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <p class="text-muted small mb-3">Subscribe to our newsletter for updates.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted small mb-0">&copy; 2024 AI Bot Startup. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-muted small mb-0">Made with <i class="bi bi-heart-fill text-danger"></i> for innovation</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
