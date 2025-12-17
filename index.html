@@ -20,6 +20,59 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .process-flow {
+            position: relative;
+        }
+
+        /* Shared arrow styles */
+        .flow-arrow {
+            position: absolute;
+            width: 220px;
+            height: 140px;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0;
+            animation: arrowFadeIn 0.3s ease forwards;
+            animation-delay: 0.8s;
+        }
+
+        /* Arrow from 1 → 2 */
+        .arrow-1-2 {
+            top: 45px;
+            left: 42%;
+        }
+
+        /* Arrow from 2 → 3 */
+        .arrow-2-3 {
+            top: 395px;
+            left: 35%;
+        }
+
+        /* Hide arrows on small screens */
+        @media (max-width: 991px) {
+            .flow-arrow {
+                display: none;
+            }
+        }
+
+        .flow-arrow path {
+            animation: dashFlow 4s linear infinite;
+            animation-delay: 0.8s;
+        }
+
+        @keyframes dashFlow {
+            to {
+                stroke-dashoffset: -40;
+            }
+        }
+
+        @keyframes arrowFadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -171,13 +224,14 @@
         </div>
     </section>
 
-     <!-- Solution Section -->
+    <!-- Solution Section -->
     <section id="features" class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
                 <span class="section-tag">Our Solution</span>
                 <h2 class="section-title">SibU Changes How You Interact With Data</h2>
-                <p class="text-muted">Ask questions in plain language. SibU understands context, intent, and follow-ups.</p>
+                <p class="text-muted">Ask questions in plain language. SibU understands context, intent, and follow-ups.
+                </p>
                 <p class="text-muted">Instant Visuals. Instant Clarity. Responses are returned as</p>
             </div>
 
@@ -218,10 +272,101 @@
 
             <div class="text-center my-5" data-aos="fade-up">
                 <h5>Your Data. Your Rules.</h5>
-                <p class="text-muted">SibU connects securely to your data — spreadsheets, databases, internal systems.</p>
+                <p class="text-muted">SibU connects securely to your data — spreadsheets, databases, internal systems.
+                </p>
             </div>
         </div>
     </section>
+
+    <!-- How Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">From Data to Insight in 3 Steps</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="position-relative process-flow">
+
+                    <!-- ARROWS -->
+                    <svg class="flow-arrow arrow-1-2" viewBox="0 0 200 120" preserveAspectRatio="none">
+                        <path d="M10,10 C50,10 200,10 90,110" fill="none" stroke="#667eea" stroke-width="2"
+                            stroke-dasharray="4,6" marker-end="url(#arrowhead)" />
+                        <defs>
+                            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="#764ba2" />
+                            </marker>
+                        </defs>
+                    </svg>
+
+                    <svg class="flow-arrow arrow-2-3" viewBox="0 0 200 120" preserveAspectRatio="none">
+                        <path d="M75,20 C60,30 50,150 200,90" fill="none" stroke="#1e88e5" stroke-width="2"
+                            stroke-dasharray="4,6" marker-end="url(#arrowhead)" />
+                    </svg>
+
+                    <div class="row g-4 mb-4">
+                        <div class="col-12 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="feature-card-icon mb-0">
+                                        <i>1.</i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h4 class="mb-0">We Connect Your Data</h4>
+                                        <p class="text-muted mb-0">Databases, files, internal systems, or APIs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 justify-content-center mb-4">
+                        <div class="col-12 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="feature-card-icon mb-0">
+                                        <i>2.</i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h4 class="mb-0">SibU Learns Your Structure</h4>
+                                        <p class="text-muted mb-0">Relationships, metrics, and business logic.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 justify-content-end">
+                        <div class="col-12 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-card">
+                                <div class="d-flex align-items-center">
+                                    <div class="feature-card-icon mb-0">
+                                        <i>3.</i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h4 class="mb-0">You Start Asking Questions</h4>
+                                        <p class="text-muted mb-0">And SibU responds instantly — visually.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="text-center my-5" data-aos="fade-up">
+                <h5>Your Data. Your Rules.</h5>
+                <p class="text-muted">SibU connects securely to your data — spreadsheets, databases, internal
+                    systems.
+                </p>
+            </div>
+        </div>
+    </section>
+
 
     <!-- About Section -->
     <section id="about" class="py-5">
