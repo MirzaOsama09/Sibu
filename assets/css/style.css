@@ -54,7 +54,7 @@
     --text-light: #94a3b8;
     --white: #ffffff;
     --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-2: linear-gradient(135deg, #3f3f3f 0%, #ff1f3d 100%);
     --gradient-3: linear-gradient(135deg, #e4cff5 0%, #c0c5fa 100%);
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
@@ -417,9 +417,9 @@ section {
 
 .image-badge {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    background: var(--white);
+    top: 33%;
+    left: 39%;
+    background-color: #ffffffcc;
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
     box-shadow: var(--shadow-md);
@@ -452,6 +452,20 @@ section {
     width: 60px;
     height: 60px;
     background: var(--gradient-1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.feature-icon-p {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-2);
     border-radius: 15px;
     display: flex;
     align-items: center;
